@@ -1,0 +1,47 @@
+import java.util.*; 
+public class Deletion_Array
+{
+   public static void main(String args[])
+   {
+     Scanner sc=new Scanner(System.in); 
+     System.out.println("how many element you want to insert"); 
+       int n=sc.nextInt(); 
+     int a[]=new int[20]; 
+     System.out.println("enter the array elements");
+     for(int i=0;i<n;i++)
+     {
+        a[i]=sc.nextInt(); 
+     }     
+     System.out.println("your element is : ");
+     for(int i=0;i<n;i++)
+     {
+	System.out.print(a[i] +" "); 
+     }
+     System.out.println(" "); 
+    // deletion program 
+     System.out.println("enter the number you want to delete"); 
+	int delete=sc.nextInt(); 
+    for(int i=0;i<n;i++)
+    {
+     if(delete==a[i])
+     {
+      for(int j=i;j<n;j++) 
+      {
+        a[j]=a[j+1]; 
+      }
+	break; 
+    }
+	
+    }
+    
+   System.out.println("after deletion the element is :");
+    for(int i=0;i<n-1;i++)
+    {
+    System.out.print(a[i]+" "); 
+    }
+   
+   
+
+ }
+
+}
