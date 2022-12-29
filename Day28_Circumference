@@ -1,0 +1,21 @@
+//Write a function that takes in the radius as input and returns the circumference of a circle.
+
+
+import java.util.*; 
+public class Circumference
+{
+    public static Double circumferenceOfCircle(Double r)
+    {  
+            return 2 * 3.14 * r; 
+        
+    } 
+    public static void main(String args[])
+    {
+        System.out.println("Enter radius  "); 
+        Scanner sc=new Scanner(System.in); 
+        Double r = sc.nextDouble();
+    
+        
+        System.out.println("Circumference of the circle is : " +circumferenceOfCircle(r)); 
+    }
+}
