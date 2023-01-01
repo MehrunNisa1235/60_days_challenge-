@@ -1,0 +1,24 @@
+import java.util.*; 
+
+public class Strings_Pro
+{ 
+    public static void main(String args[])
+    {
+    Scanner sc=new Scanner(System.in); 
+    System.out.println("Enter any String : "); 
+    String name=sc.nextLine();
+
+    System.out.println("String is : " +name);  
+
+    System.out.println("length of the String is " +name.length());  
+
+    // charAt
+    
+    System.out.println("When we use charAt() then the String Result is : "); 
+    for(int i=0;i<name.length();i++)
+    {
+        System.out.println(name.charAt(i)); 
+    }
+    }  
+    
+}    
