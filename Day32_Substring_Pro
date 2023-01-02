@@ -1,0 +1,8 @@
+public class Substring_Pro
+{
+    public static void main(String args[])
+    {
+        String name="Mehrun Nisa"; 
+        System.out.println(name.substring(0,6));
+    }
+}
