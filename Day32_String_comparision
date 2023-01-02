@@ -1,0 +1,25 @@
+import java.util.*; 
+public class String_comparision
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in); 
+        System.out.println("enter the First String ");
+            String s1=sc.nextLine();
+        System.out.println("enter the Second String ");
+            String s2=sc.nextLine(); 
+
+
+        if(s1.compareTo(s2)==0)                 //  if(s1.equals(s2))
+        {
+            System.out.println("String are equal");
+        }
+        else
+        {
+            System.out.println("String are not equal"); 
+        }
+
+
+        
+    }
+}
