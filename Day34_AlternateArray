@@ -1,0 +1,32 @@
+import java.util.*; 
+
+public class AlternateArray
+{
+    public static void print(int arr[], int n)
+    {
+        // your code here
+        for(int i=0;i<n;i=i+2)
+        {
+          System.out.print(arr[i] +" ");
+        }
+    } 
+
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter the number of element");
+      int n=sc.nextInt();
+
+      int arr[]=new int[n]; 
+      System.out.println("enter the array element");
+      for(int i=0;i<n;i++)
+      {
+         arr[i]=sc.nextInt();
+      } 
+
+      print(arr,n); 
+      
+      
+      
+    }
+}
