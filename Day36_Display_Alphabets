@@ -1,0 +1,9 @@
+public class Display_Alphabets{
+	public static void main(String args[]){
+  		char ch;
+	    System.out.println("Our Alphabets are here "); 
+		for(ch= 'a'; ch<= 'z'; ch++){ 
+			System.out.print(ch +"\t");
+		}
+	}
+}
