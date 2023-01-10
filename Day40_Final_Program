@@ -1,0 +1,25 @@
+class Final_Program 
+{
+	public void display()
+	{
+		System.out.println("hii how r u");
+	}
+	public final void show()
+	{
+		System.out.println("Welcome to java Programming Lab");
+	}
+}
+public class finalmethod extends Final_Program
+{
+	public void display()
+	{
+		System.out.println("Hello guys");
+	}
+	public static void main(String args[])
+	{
+		finalmethod f= new finalmethod();
+		f.display();
+		f.show();
+	}
+}
+
