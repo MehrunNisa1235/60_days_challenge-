@@ -1,0 +1,36 @@
+ class Electronics 
+{
+  void electronics()
+{
+  System.out.println("Class Electronics");  
+  System.out.println("Device Type :- Electronics");  
+}   
+}
+
+  class Television extends Electronics
+{
+  void television()
+{
+   System.out.println("Class Television"); 
+   System.out.println("category - television");  
+}   
+} 
+  class Led extends Television
+{
+  void led()
+{
+   System.out.println("Class Led"); 
+   System.out.println("Display technology - LED");  
+}   
+}  
+ 
+class Multilevel
+{
+ public static void main(String args[]) 
+{
+   Led l=new Led(); 
+   l.electronics();
+   l.television();
+   l.led();   
+}
+} 
