@@ -1,0 +1,31 @@
+
+// Update the 2nd bit(position = 1) of a number n:- 
+
+import java.util.*; 
+public class UpdateBitManipulation
+{
+    public static void main(String args[])
+    {
+        int n=5; 
+        int pos=2; 
+        int bitMask=1<<pos; 
+
+        System.out.println("Choose the Operation 1 for SET and 0 for Clear");
+        Scanner sc=new Scanner(System.in);
+          int  ope=sc.nextInt();
+
+        if(ope == 1)
+        {
+            // set 
+            int newNumber=bitMask | n; 
+            System.out.println(newNumber); 
+        }
+        else
+        {
+            // clear
+            int notbitMask= ~(bitMask);
+            int newNumber= notbitMask & n ; 
+            System.out.println(newNumber); 
+        }
+    }
+}
