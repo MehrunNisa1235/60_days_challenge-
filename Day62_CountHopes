@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class CountHops
+{
+  public static long count(int n)
+  {
+		
+          long m = 1000000007;
+	  long fib[]= new long[n+1];
+              fib[0]=1;
+
+	   for(int i=1;i<=n;i++)
+           {
+             if(i==1)
+			  
+                 fib[i]=fib[i-1];
+             else if(i==2)
+	          fib[i]=fib[i-1]+fib[i-2];
+              else
+               {
+		    long temp =fib[i-1]+fib[i-2]+fib[i-3];		
+		       fib[i]=temp%m;
+		}
+          }
+
+	return fib[n];
+  }
+	
+public static void main(String[] args)
+{
+		
+     Scanner sc = new Scanner(System.in);
+	 int n=sc.nextInt();
+	 System.out.println(count(n));
+	
+}
+}
