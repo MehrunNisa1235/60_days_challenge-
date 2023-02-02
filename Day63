@@ -1,0 +1,11 @@
+public class StringToDouble 
+{
+
+    public static void main(String args[])
+    {
+        String str = "78.7";
+        double d = Double.parseDouble("78.7");
+        System.out.println(d);
+    }
+
+}
