@@ -1,0 +1,36 @@
+port java.util.*;
+class CheckAnagrams
+{
+ public static void main(String[] args)
+  {
+	 String str1 = "earth";
+	 String str2 = "heart";
+
+   //convert string into lowercase 
+
+	 str1 = str1.toLowerCase();
+	 str2 = str2.toLowerCase();
+  // check length of given Strings.
+
+    if(str1.length() == str2.length())
+    {
+	//convert string into char Array.
+        char[] ch1 = str1.toCharArray();
+	char[] ch2 = str2.toCharArray();
+
+	// sort char Array
+	 Arrays.sort(ch1);
+	Arrays.sort(ch2);
+
+	// check both striNG are equal or not
+	boolean result = Arrays.equals(ch1,ch2);
+
+	if(result)
+		System.out.println(str1+ " " +"and"+" "+str2+" "+ "are anagrams of each other");
+	else
+	        System.out.println(str1+ " " +"and"+" "+str2+" "+ "are anagrams of each other");
+    }
+	 else
+	        System.out.println(str1+ " " +"and"+" "+str2+" "+ "are anagrams of each other");
+ }
+}
